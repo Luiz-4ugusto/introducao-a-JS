@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var id = prompt("idade?");
+      if (id > 0 && id < 13) {
+        document.write("kid");
+      } else if (id > 12 && id < 18) {
+        document.write("adolecente");
+      } else if (id > 17 && id < 60) {
+        document.write("adulto");
+      } else if (id > 59) {
+        document.write("idoso");
+      } else {
+        document.write("Falta CPF");
+      }
+    </script>
+  </body>
+</html>

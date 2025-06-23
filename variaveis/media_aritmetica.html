@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="arquivo7.css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <script>
+      var nome = prompt("qual seu nome");
+      var N1 = Number(prompt("Qual a nota"));
+      var N2 = Number(prompt("Qual a nota 2"));
+      var N3 = Number(prompt("Qual a nota 3"));
+
+      n = (N1 + N2 + N3) / 3;
+      n = n.toFixed(2);
+      if (n < 7 && n >= 0) {
+        document.write(`<p class="negado">${nome} você tirou ${n} negado</p>`);
+      } else if (n >= 7 && n < 10) {
+        document.write(
+          `<p class="aprovado">${nome} você tirou ${n} aprovado</p>`
+        );
+      } else if (n == 10) {
+        document.write(
+          `<p class="gg">${nome} você tirou ${n} gg,jogou mt mlk</p>`
+        );
+      } else {
+        document.write(nome + " " + n + " ??????");
+      }
+    </script>
+  </body>
+</html>

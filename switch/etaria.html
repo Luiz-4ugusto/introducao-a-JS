@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var v1 = prompt("insira nota");
+      v1 = parseInt(v1);
+      switch (true) {
+        case v1 >= 0 && v1 <= 12:
+          document.write("craiança");
+          break;
+        case v1 >= 13 && v1 <= 17:
+          document.write("adolescente");
+          break;
+        case v1 >= 18 && v1 <= 59:
+          document.write("adulto");
+          break;
+        case v1 >= 60:
+          document.write("idoso");
+          break;
+        default:
+          document.write("forma invalida inválido");
+          break;
+      }
+    </script>
+  </body>
+</html>
